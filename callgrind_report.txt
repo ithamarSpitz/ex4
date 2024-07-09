@@ -1,0 +1,192 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.11343' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 481672
+Trigger: Program termination
+Profiled target:  ./euler_circuit -v 5 -e 10 -s 42 (PID 11343, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir        
+--------------------------------------------------------------------------------
+2,812,276  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir         file:function
+--------------------------------------------------------------------------------
+1,053,438  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  568,143  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  275,680  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+  119,439  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  114,526  /build/glibc-LcI20x/glibc-2.31/gmon/mcount.c:__mcount_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   90,757  /build/glibc-LcI20x/glibc-2.31/elf/do-rel.h:_dl_relocate_object
+   90,573  /build/glibc-LcI20x/glibc-2.31/gmon/../sysdeps/x86_64/_mcount.S:mcount [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   85,344  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   71,545  /build/glibc-LcI20x/glibc-2.31/elf/dl-addr.c:_dl_addr [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   39,555  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   20,905  ???:std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand() [/home/itamar/Desktop/ex4/euler_circuit]
+   18,631  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   15,595  ???:std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+   13,706  ???:std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+   12,128  ???:std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   10,227  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+    8,960  /build/glibc-LcI20x/glibc-2.31/wcsmbs/btowc.c:btowc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    8,579  /build/glibc-LcI20x/glibc-2.31/elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    8,112  ???:std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+    6,873  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    6,864  ???:unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+    6,853  ???:unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+    6,600  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+    6,051  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.h:__GI___tunables_init
+    4,349  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    3,974  /build/glibc-LcI20x/glibc-2.31/libio/iofwrite.c:fwrite [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    3,468  ???:std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    3,420  /build/glibc-LcI20x/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,366  ???:std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+    3,186  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,064  ???:Graph::findEulerCircuit() [/home/itamar/Desktop/ex4/euler_circuit]
+    3,062  /build/glibc-LcI20x/glibc-2.31/elf/dl-misc.c:_dl_name_match_p [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,816  /build/glibc-LcI20x/glibc-2.31/wcsmbs/wctob.c:wctob [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,788  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave'2 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,772  ???:std::vector<int, std::allocator<int> >::operator[](unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+    2,733  ???:std::ctype<wchar_t>::_M_initialize_ctype() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,496  ???:__dynamic_cast [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,245  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,239  /build/glibc-LcI20x/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,184  ???:std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,105  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,064  ???:std::ostream& std::ostream::_M_insert<long>(long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,940  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,743  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,608  /build/glibc-LcI20x/glibc-2.31/elf/get-dynamic-info.h:_dl_map_object_from_fd
+    1,480  ???:__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,447  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,408  /build/glibc-LcI20x/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,350  /build/glibc-LcI20x/glibc-2.31/libio/libioP.h:fwrite
+    1,324  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,300  ???:int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [/home/itamar/Desktop/ex4/euler_circuit]
+    1,260  ???:std::locale::id::_M_id() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,209  /build/glibc-LcI20x/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,194  ???:Graph::hasEulerCircuit() [/home/itamar/Desktop/ex4/euler_circuit]
+    1,187  /build/glibc-LcI20x/glibc-2.31/elf/dl-object.c:_dl_new_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,174  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S:__memcmp_avx2_movbe [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,124  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:open_path [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,107  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,092  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,087  ???:std::ctype<char>::_M_widen_init() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,065  /build/glibc-LcI20x/glibc-2.31/elf/dl-minimal.c:malloc [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,036  /build/glibc-LcI20x/glibc-2.31/wctype/wctype_l.c:wctype_l [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      926  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      896  /build/glibc-LcI20x/glibc-2.31/wcsmbs/./wcsmbsload.h:btowc
+      888  /build/glibc-LcI20x/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      864  ???:0x0000000000125100 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      854  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      824  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      792  ???:0x0000000000125280 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      779  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      768  /build/glibc-LcI20x/glibc-2.31/elf/dl-profstub.c:_dl_mcount_wrapper_check [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      768  /build/glibc-LcI20x/glibc-2.31/iconv/gconv_simple.c:__gconv_btwoc_ascii [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      768  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:ptmalloc_init.part.0
+      758  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:intel_check_word.isra.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      744  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      741  ???:std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      723  ???:std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()() [/home/itamar/Desktop/ex4/euler_circuit]
+      718  /build/glibc-LcI20x/glibc-2.31/stdlib/getenv.c:getenv [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      717  ???:Graph::printGraph() [/home/itamar/Desktop/ex4/euler_circuit]
+      691  ???:std::locale::_Impl::_Impl(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      687  /build/glibc-LcI20x/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd
+      661  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86/dl-prop.h:_dl_process_pt_note [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      627  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      605  ???:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      598  /build/glibc-LcI20x/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      598  ???:std::_Deque_iterator<int, int&, int*>::_Deque_iterator(std::_Deque_iterator<int, int&, int*> const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      570  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S:index [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      562  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      536  ???:__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      525  ???:std::deque<int, std::allocator<int> >::back() [/home/itamar/Desktop/ex4/euler_circuit]
+      522  ???:__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [/home/itamar/Desktop/ex4/euler_circuit]
+      517  ???:0x00000000048e9720 [???]
+      510  /build/glibc-LcI20x/glibc-2.31/string/../bits/stdlib-bsearch.h:intel_check_word.isra.0
+      506  ???:void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      490  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      487  ???:main [/home/itamar/Desktop/ex4/euler_circuit]
+      486  /build/glibc-LcI20x/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      485  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      472  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      469  /build/glibc-LcI20x/glibc-2.31/posix/getopt.c:_getopt_internal_r [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      451  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.c:__tunable_get_val [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      450  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      448  /build/glibc-LcI20x/glibc-2.31/libio/iofflush.c:fflush [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      441  ???:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [/home/itamar/Desktop/ex4/euler_circuit]
+      440  ???:Graph::addEdge(int, int) [/home/itamar/Desktop/ex4/euler_circuit]
+      440  ???:void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      439  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+      420  /build/glibc-LcI20x/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      420  ???:std::_Deque_iterator<int, int&, int*>::operator--() [/home/itamar/Desktop/ex4/euler_circuit]
+      414  ???:std::__cxx11::numpunct<char>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      414  ???:std::numpunct<char>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      409  /build/glibc-LcI20x/glibc-2.31/elf/dl-init.c:call_init.part.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      400  ???:std::uniform_int_distribution<int>::param_type::a() const [/home/itamar/Desktop/ex4/euler_circuit]
+      396  ???:std::ostream::operator<<(int) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      392  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_atexit.c:__new_exitfn [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      390  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c:rtld_lock_default_lock_recursive [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      390  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c:rtld_lock_default_unlock_recursive [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      375  ???:std::vector<int, std::allocator<int> >::size() const [/home/itamar/Desktop/ex4/euler_circuit]
+      374  /build/glibc-LcI20x/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      374  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      363  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_atexit.c:__cxa_atexit [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      361  /build/glibc-LcI20x/glibc-2.31/elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      352  ???:std::deque<int, std::allocator<int> >::end() [/home/itamar/Desktop/ex4/euler_circuit]
+      350  ???:std::__cxx11::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      350  ???:std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      336  ???:std::ostream::put(char) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      335  /build/glibc-LcI20x/glibc-2.31/elf/get-dynamic-info.h:dl_main
+      330  ???:bool std::operator==<int, int&, int*>(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      330  ???:int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [/home/itamar/Desktop/ex4/euler_circuit]
+      330  ???:std::deque<int, std::allocator<int> >::empty() const [/home/itamar/Desktop/ex4/euler_circuit]
+      330  ???:std::deque<int, std::allocator<int> >::push_back(int const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      329  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      327  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:_dl_init_paths [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      324  ???:int* std::__niter_base<int*>(int*) [/home/itamar/Desktop/ex4/euler_circuit]
+      320  ???:std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      310  /build/glibc-LcI20x/glibc-2.31/setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      309  /build/glibc-LcI20x/glibc-2.31/elf/do-rel.h:_dl_start
+      306  ???:0x00000000000d7450 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      300  ???:int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [/home/itamar/Desktop/ex4/euler_circuit]
+      300  ???:std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [/home/itamar/Desktop/ex4/euler_circuit]
+      299  ???:std::vector<int, std::allocator<int> >::push_back(int const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      297  ???:0x00000000048e74d0 [???]
+      297  ???:std::deque<int, std::allocator<int> >::pop_back() [/home/itamar/Desktop/ex4/euler_circuit]
+      296  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      294  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      286  ???:std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      273  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/strcspn.S:strcspn [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      270  ???:operator new(unsigned long, void*) [/home/itamar/Desktop/ex4/euler_circuit]
+      269  /build/glibc-LcI20x/glibc-2.31/libio/genops.c:_IO_default_xsputn [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      269  ???:std::ios_base::Init::Init() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      266  /build/glibc-LcI20x/glibc-2.31/libio/libioP.h:fflush
+      265  ???:Graph::generateRandomGraph(int, unsigned int) [/home/itamar/Desktop/ex4/euler_circuit]
+      264  ???:bool __gnu_cxx::operator!=<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [/home/itamar/Desktop/ex4/euler_circuit]
+      261  ???:0x00000000048e7d10 [???]
+      259  /build/glibc-LcI20x/glibc-2.31/elf/dl-object.c:_dl_add_to_namespace_list [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      253  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:open_verify.constprop.1 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      252  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      252  ???:__gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [/home/itamar/Desktop/ex4/euler_circuit]
+      248  /build/glibc-LcI20x/glibc-2.31/elf/dl-minimal.c:strsep [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      243  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:init_cacheinfo [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      242  ???:std::stack<int, std::deque<int, std::allocator<int> > >::empty() const [/home/itamar/Desktop/ex4/euler_circuit]
+      238  /build/glibc-LcI20x/glibc-2.31/elf/get-dynamic-info.h:_dl_start
+      238  ???:std::enable_if<std::__is_bitwise_relocatable<int, void>::value, int*>::type std::__relocate_a_1<int, int>(int*, int*, int*, std::allocator<int>&) [/home/itamar/Desktop/ex4/euler_circuit]
+      235  ???:std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [/home/itamar/Desktop/ex4/euler_circuit]
+      231  ???:std::stack<int, std::deque<int, std::allocator<int> > >::top() [/home/itamar/Desktop/ex4/euler_circuit]
+      230  ???:std::vector<int, std::allocator<int> >::_S_relocate(int*, int*, int*, std::allocator<int>&) [/home/itamar/Desktop/ex4/euler_circuit]
+
